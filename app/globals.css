@@ -19,5 +19,8 @@
 }
 
 body {
-  color: #171717;
+  color: #ededed;
+  background-image: url('/food1.Webp');
+  background-size: cover;
+  background-position: center;
 }
