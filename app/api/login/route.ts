@@ -11,7 +11,7 @@ export async function POST(request: Request) {
     response.cookies.set('admin_auth', 'true', {
       httpOnly: true,
       path: '/',
-      maxAge: 60 * 60 * 8, // 8 hours
+      maxAge: 60 * 60 * 8,
     })
     return response
   }

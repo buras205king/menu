@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
-
+import { RiAdminFill } from "react-icons/ri";
 const links = [
   { label: 'All', href: '/' },
   { label: 'Food', href: '/Food' },
   { label: 'Drink', href: '/drink' },
   { label: 'Room', href: '/room' },
+  { label: <RiAdminFill  />, href:'/admin'}
 ]
 
 const NavBar = () => {
