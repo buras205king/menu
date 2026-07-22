@@ -2,7 +2,7 @@ import FoodMenu from "./components/FoodMenu";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <section className="ml-18 mr-18 pt-20 text-center bg-[url('/image/food1.Webp')] bg-cover bg-center rounded-4xl p-6">
+      <section className="ml-18 mr-18 pt-20 text-center bg-[url('/image/food1.Webp')] bg-cover bg-center rounded-4xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-105">
       
         <h1 className="text-4xl">
           <span className="text-amber-300 text-9xl font-bold">Welcome</span>
