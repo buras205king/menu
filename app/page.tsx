@@ -1,4 +1,6 @@
 import FoodMenu from "./components/FoodMenu";
+import Drinkmenu from "./components/Drinkmenu"
+import RoomMenu from "./components/RoomMenu";
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -13,7 +15,8 @@ export default function Home() {
         </section>
         
         <FoodMenu/>
-     
+        <Drinkmenu/>
+        <RoomMenu/>
     </main>
   )
 }
