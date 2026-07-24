@@ -1,8 +1,11 @@
-// lib/prisma.ts
+// prisma/client.ts
 import { PrismaClient } from "../app/generated/prisma/client";
+import { PrismaMariaDb } from "@prisma/adapter-mariadb";
 
-const globalForPrisma = global as unknown as { prisma: PrismaClient };
+const adapter = new PrismaMariaDb(process.env.DATABASE_URL as string);
 
-export const prisma = globalForPrisma.prisma || new prismaClient();
+const globalForPrisma = globalThis as unknown as { prisma: PrismaClient };
+
+export const prisma = globalForPrisma.prisma ?? new PrismaClient({ adapter });
 
 if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;

@@ -1,9 +1,11 @@
 import React from 'react'
-import Drinkmenu from "../components/Drinkmenu";
-const DrinkPage = () => {
+import Drinkmenu from '../components/Drinkmenu'
+const Drinkpage = () => {
   return (
-    <div><Drinkmenu/></div>
+    <div>
+      <Drinkmenu/>
+    </div>
   )
 }
 
-export default DrinkPage
+export default Drinkpage
